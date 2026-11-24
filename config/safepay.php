@@ -6,6 +6,9 @@ $deploy = json_decode(@file_get_contents(base_path('blockchain/deployments.json'
 
 return [
     'rpc' => env('SAFEPAY_RPC', $deploy['rpc'] ?? 'http://127.0.0.1:8545'),
+    // RPC yang disuntik ke browser MetaMask. Backend tetap memakai localhost;
+    // browser peserta memakai IP LAN agar 127.0.0.1 tidak menunjuk ke perangkatnya sendiri.
+    'browser_rpc' => env('SAFEPAY_BROWSER_RPC', env('SAFEPAY_RPC', $deploy['rpc'] ?? 'http://127.0.0.1:8545')),
     'chain_id' => (int) env('SAFEPAY_CHAIN_ID', $deploy['chainId'] ?? 31337),
     // 'manual' = server tanda tangan pakai akun Hardhat (tanpa MetaMask).
     // 'wallet' = pengguna tanda tangan sendiri lewat MetaMask di browser.

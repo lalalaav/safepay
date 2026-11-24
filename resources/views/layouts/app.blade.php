@@ -10,7 +10,7 @@
 window.SAFEPAY = {
   escrow: "{{ config('safepay.escrow') }}",
   token: "{{ config('safepay.token') }}",
-  rpc: "{{ config('safepay.rpc') }}",
+  rpc: "{{ config('safepay.browser_rpc') }}",
   chainHex: "0x{{ dechex((int) config('safepay.chain_id')) }}",
   routes: {
     wallet: "{{ route('wallet.bind') }}",
