@@ -1,0 +1,132 @@
+<mxfile host="app.diagrams.net" modified="2026-11-23T18:50:00.000Z" agent="Hermes Agent" version="24.7.17" type="device">
+  <diagram id="usecase" name="01 Use Case">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" background="#ffffff" defaultVertexStyle="fontFamily=Helvetica;fontSize=13;" defaultEdgeStyle="fontFamily=Helvetica;fontSize=12;">
+      <root><mxCell id="0"/><mxCell id="1" parent="0"/>
+        <mxCell id="sys" value="SafePay — Blockchain Escrow Payment System" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;strokeColor=#334155;fillColor=#f8fafc;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="330" y="40" width="980" height="760" as="geometry"/></mxCell>
+        <mxCell id="buyer" value="Andi&#xa;Buyer" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1"><mxGeometry x="80" y="180" width="80" height="120" as="geometry"/></mxCell>
+        <mxCell id="seller" value="Budi&#xa;Seller" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1"><mxGeometry x="80" y="430" width="80" height="120" as="geometry"/></mxCell>
+        <mxCell id="validator" value="Citra&#xa;Validator" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1"><mxGeometry x="1430" y="250" width="80" height="120" as="geometry"/></mxCell>
+        <mxCell id="auditor" value="Dinda&#xa;Auditor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1"><mxGeometry x="1430" y="540" width="80" height="120" as="geometry"/></mxCell>
+        <mxCell id="uc1" value="Buat pesanan" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="470" y="130" width="210" height="60" as="geometry"/></mxCell>
+        <mxCell id="uc2" value="Bayar &amp; kunci dana&#xa;di escrow" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="760" y="130" width="240" height="60" as="geometry"/></mxCell>
+        <mxCell id="uc3" value="Lihat status transaksi" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="470" y="260" width="210" height="60" as="geometry"/></mxCell>
+        <mxCell id="uc4" value="Konfirmasi barang diterima" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="760" y="260" width="240" height="60" as="geometry"/></mxCell>
+        <mxCell id="uc5" value="Ajukan sengketa" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="1040" y="260" width="210" height="60" as="geometry"/></mxCell>
+        <mxCell id="uc6" value="Tandai barang dikirim" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="470" y="420" width="210" height="60" as="geometry"/></mxCell>
+        <mxCell id="uc7" value="Lihat pesanan masuk" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="760" y="420" width="210" height="60" as="geometry"/></mxCell>
+        <mxCell id="uc8" value="Putuskan sengketa" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="1040" y="420" width="210" height="60" as="geometry"/></mxCell>
+        <mxCell id="uc9" value="Buka Blockchain Explorer" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="760" y="570" width="240" height="60" as="geometry"/></mxCell>
+        <mxCell id="uc10" value="Verifikasi transaction hash" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="1040" y="570" width="240" height="60" as="geometry"/></mxCell>
+        <mxCell id="e1" style="endArrow=none;html=1;" edge="1" parent="1" source="buyer" target="uc1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e2" style="endArrow=none;html=1;" edge="1" parent="1" source="buyer" target="uc2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e3" style="endArrow=none;html=1;" edge="1" parent="1" source="buyer" target="uc3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e4" style="endArrow=none;html=1;" edge="1" parent="1" source="buyer" target="uc4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e5" style="endArrow=none;html=1;" edge="1" parent="1" source="buyer" target="uc5"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e6" style="endArrow=none;html=1;" edge="1" parent="1" source="seller" target="uc6"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e7" style="endArrow=none;html=1;" edge="1" parent="1" source="seller" target="uc7"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e8" style="endArrow=none;html=1;" edge="1" parent="1" source="validator" target="uc8"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e9" style="endArrow=none;html=1;" edge="1" parent="1" source="auditor" target="uc9"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e10" style="endArrow=none;html=1;" edge="1" parent="1" source="auditor" target="uc10"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="note" value="Mode demo manual: server menandatangani transaksi memakai akun Hardhat lokal.&#xa;Mode wallet: pengguna menandatangani melalui MetaMask." style="shape=note;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="480" y="690" width="650" height="70" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="activity" name="02 Activity User Flow">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1400" pageHeight="1100" background="#ffffff" defaultVertexStyle="fontFamily=Helvetica;fontSize=13;" defaultEdgeStyle="fontFamily=Helvetica;fontSize=12;">
+      <root><mxCell id="0"/><mxCell id="1" parent="0"/>
+        <mxCell id="start" value="Mulai" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dbeafe;" vertex="1" parent="1"><mxGeometry x="620" y="30" width="120" height="50" as="geometry"/></mxCell>
+        <mxCell id="a1" value="Login sesuai peran&#xa;Buyer / Seller / Validator / Auditor" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="530" y="120" width="300" height="65" as="geometry"/></mxCell>
+        <mxCell id="a2" value="Buyer membuat order&#xa;nominal + seller" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="530" y="225" width="300" height="65" as="geometry"/></mxCell>
+        <mxCell id="a3" value="Bayar melalui smart contract&#xa;PaymentCreated / FUNDED" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dcfce7;" vertex="1" parent="1"><mxGeometry x="530" y="330" width="300" height="65" as="geometry"/></mxCell>
+        <mxCell id="d1" value="Transaksi sukses?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="580" y="440" width="200" height="90" as="geometry"/></mxCell>
+        <mxCell id="a4" value="Seller menandai dikirim&#xa;SHIPPED" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="530" y="575" width="300" height="65" as="geometry"/></mxCell>
+        <mxCell id="d2" value="Barang sesuai?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="580" y="680" width="200" height="90" as="geometry"/></mxCell>
+        <mxCell id="a5" value="Buyer konfirmasi diterima&#xa;RELEASED → dana ke seller" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dcfce7;" vertex="1" parent="1"><mxGeometry x="530" y="815" width="300" height="65" as="geometry"/></mxCell>
+        <mxCell id="a6" value="Buyer ajukan sengketa&#xa;DISPUTED → validator" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fef3c7;" vertex="1" parent="1"><mxGeometry x="940" y="680" width="300" height="65" as="geometry"/></mxCell>
+        <mxCell id="a7" value="Validator memutuskan&#xa;REFUNDED atau RELEASED" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fef3c7;" vertex="1" parent="1"><mxGeometry x="940" y="815" width="300" height="65" as="geometry"/></mxCell>
+        <mxCell id="end" value="Explorer menampilkan hash, block, status" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e0e7ff;" vertex="1" parent="1"><mxGeometry x="530" y="965" width="300" height="55" as="geometry"/></mxCell>
+        <mxCell id="n1" style="endArrow=block;html=1;" edge="1" parent="1" source="start" target="a1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n2" style="endArrow=block;html=1;" edge="1" parent="1" source="a1" target="a2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n3" style="endArrow=block;html=1;" edge="1" parent="1" source="a2" target="a3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n4" value="Ya" style="endArrow=block;html=1;" edge="1" parent="1" source="a3" target="d1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n5" value="Ya" style="endArrow=block;html=1;" edge="1" parent="1" source="d1" target="a4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n6" value="Ya" style="endArrow=block;html=1;" edge="1" parent="1" source="a4" target="d2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n7" value="Ya" style="endArrow=block;html=1;" edge="1" parent="1" source="d2" target="a5"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n8" value="Tidak" style="endArrow=block;html=1;" edge="1" parent="1" source="d2" target="a6"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n9" value="Putusan" style="endArrow=block;html=1;" edge="1" parent="1" source="a6" target="a7"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n10" style="endArrow=block;html=1;" edge="1" parent="1" source="a5" target="end"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n11" style="endArrow=block;html=1;" edge="1" parent="1" source="a7" target="end"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="n12" value="Tidak → tampilkan gagal" style="endArrow=block;html=1;dashed=1;" edge="1" parent="1" source="d1" target="end"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="sequence" name="03 Sequence Escrow">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" background="#ffffff" defaultVertexStyle="fontFamily=Helvetica;fontSize=13;" defaultEdgeStyle="fontFamily=Helvetica;fontSize=12;">
+      <root><mxCell id="0"/><mxCell id="1" parent="0"/>
+        <mxCell id="h1" value="Buyer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dbeafe;" vertex="1" parent="1"><mxGeometry x="80" y="40" width="150" height="55" as="geometry"/></mxCell>
+        <mxCell id="h2" value="Laravel Dashboard" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dcfce7;" vertex="1" parent="1"><mxGeometry x="330" y="40" width="180" height="55" as="geometry"/></mxCell>
+        <mxCell id="h3" value="Hardhat Node" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fef3c7;" vertex="1" parent="1"><mxGeometry x="630" y="40" width="170" height="55" as="geometry"/></mxCell>
+        <mxCell id="h4" value="SafePayEscrow.sol" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce7f3;" vertex="1" parent="1"><mxGeometry x="900" y="40" width="190" height="55" as="geometry"/></mxCell>
+        <mxCell id="h5" value="Seller" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dbeafe;" vertex="1" parent="1"><mxGeometry x="1190" y="40" width="150" height="55" as="geometry"/></mxCell>
+        <mxCell id="h6" value="MySQL / Explorer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ede9fe;" vertex="1" parent="1"><mxGeometry x="1390" y="40" width="170" height="55" as="geometry"/></mxCell>
+        <mxCell id="l1" value="Buyer buat order" style="shape=line;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="150" y="130" width="1" height="710" as="geometry"/></mxCell>
+        <mxCell id="l2" value="" style="shape=line;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="420" y="130" width="1" height="710" as="geometry"/></mxCell>
+        <mxCell id="l3" value="" style="shape=line;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="715" y="130" width="1" height="710" as="geometry"/></mxCell>
+        <mxCell id="l4" value="" style="shape=line;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="995" y="130" width="1" height="710" as="geometry"/></mxCell>
+        <mxCell id="l5" value="" style="shape=line;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="1265" y="130" width="1" height="710" as="geometry"/></mxCell>
+        <mxCell id="l6" value="" style="shape=line;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="1475" y="130" width="1" height="710" as="geometry"/></mxCell>
+        <mxCell id="s1" value="1. POST /orders" style="endArrow=block;html=1;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="150" y="180" as="sourcePoint"/><mxPoint x="420" y="180" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="s2" value="2. payment request" style="endArrow=block;html=1;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="420" y="270" as="sourcePoint"/><mxPoint x="715" y="270" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="s3" value="3. createPayment(seller, amount, deadline)" style="endArrow=block;html=1;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="715" y="360" as="sourcePoint"/><mxPoint x="995" y="360" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="s4" value="4. PaymentCreated(id) + dana terkunci" style="endArrow=block;html=1;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="995" y="450" as="sourcePoint"/><mxPoint x="715" y="450" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="s5" value="5. seller menekan shipped" style="endArrow=block;html=1;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="1265" y="540" as="sourcePoint"/><mxPoint x="995" y="540" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="s6" value="6. markShipped(id) → SHIPPED" style="endArrow=block;html=1;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="995" y="630" as="sourcePoint"/><mxPoint x="715" y="630" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="s7" value="7. confirmReceived(id)" style="endArrow=block;html=1;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="150" y="720" as="sourcePoint"/><mxPoint x="995" y="720" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="s8" value="8. Released + transfer token ke seller" style="endArrow=block;html=1;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="995" y="810" as="sourcePoint"/><mxPoint x="1265" y="810" as="targetPoint"/></mxGeometry></mxCell>
+        <mxCell id="s9" value="9. receipt + status + hash" style="endArrow=block;html=1;dashed=1;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="715" y="870" as="sourcePoint"/><mxPoint x="1475" y="870" as="targetPoint"/></mxGeometry></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="class" name="04 Class Diagram">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1500" pageHeight="1000" background="#ffffff" defaultVertexStyle="fontFamily=Helvetica;fontSize=13;" defaultEdgeStyle="fontFamily=Helvetica;fontSize=12;">
+      <root><mxCell id="0"/><mxCell id="1" parent="0"/>
+        <mxCell id="u" value="User&#xa;— id&#xa;— name&#xa;— email&#xa;— role&#xa;+ hasRole()" style="swimlane;childLayout=stackLayout;horizontal=0;startSize=30;horizontalStack=0;rounded=0;html=1;" vertex="1" parent="1"><mxGeometry x="70" y="100" width="220" height="160" as="geometry"/></mxCell>
+        <mxCell id="w" value="Wallet&#xa;— id&#xa;— user_id&#xa;— wallet_address" style="swimlane;childLayout=stackLayout;horizontal=0;startSize=30;rounded=0;html=1;" vertex="1" parent="1"><mxGeometry x="70" y="380" width="220" height="130" as="geometry"/></mxCell>
+        <mxCell id="o" value="Order&#xa;— id&#xa;— buyer_id&#xa;— seller_id&#xa;— product_name&#xa;— amount" style="swimlane;childLayout=stackLayout;horizontal=0;startSize=30;rounded=0;html=1;" vertex="1" parent="1"><mxGeometry x="410" y="100" width="250" height="180" as="geometry"/></mxCell>
+        <mxCell id="e" value="Escrow&#xa;— id&#xa;— order_id&#xa;— contract_id&#xa;— status&#xa;— deadline" style="swimlane;childLayout=stackLayout;horizontal=0;startSize=30;rounded=0;html=1;" vertex="1" parent="1"><mxGeometry x="800" y="100" width="250" height="180" as="geometry"/></mxCell>
+        <mxCell id="t" value="BlockchainTransaction&#xa;— id&#xa;— escrow_id&#xa;— tx_hash&#xa;— block_number&#xa;— event_type" style="swimlane;childLayout=stackLayout;horizontal=0;startSize=30;rounded=0;html=1;" vertex="1" parent="1"><mxGeometry x="1160" y="100" width="280" height="180" as="geometry"/></mxCell>
+        <mxCell id="d" value="Dispute&#xa;— id&#xa;— escrow_id&#xa;— reason&#xa;— status&#xa;— resolution" style="swimlane;childLayout=stackLayout;horizontal=0;startSize=30;rounded=0;html=1;" vertex="1" parent="1"><mxGeometry x="800" y="410" width="250" height="180" as="geometry"/></mxCell>
+        <mxCell id="c" value="ChainReader&#xa;+ payment(id)&#xa;+ tokenBalance(holder)&#xa;+ receipt(hash)&#xa;+ verify(hash, topics)" style="swimlane;childLayout=stackLayout;horizontal=0;startSize=30;rounded=0;html=1;fillColor=#dcfce7;" vertex="1" parent="1"><mxGeometry x="380" y="470" width="300" height="170" as="geometry"/></mxCell>
+        <mxCell id="p" value="PaymentService&#xa;+ run(action, params)&#xa;manual Hardhat signing" style="swimlane;childLayout=stackLayout;horizontal=0;startSize=30;rounded=0;html=1;fillColor=#fef3c7;" vertex="1" parent="1"><mxGeometry x="1160" y="450" width="280" height="130" as="geometry"/></mxCell>
+        <mxCell id="r1" value="1" style="endArrow=none;startArrow=none;html=1;" edge="1" parent="1" source="u" target="w"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r2" value="buyer / seller" style="endArrow=none;html=1;" edge="1" parent="1" source="u" target="o"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r3" value="1" style="endArrow=none;html=1;" edge="1" parent="1" source="o" target="e"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r4" value="1..*" style="endArrow=none;html=1;" edge="1" parent="1" source="e" target="t"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r5" value="0..1" style="endArrow=none;html=1;" edge="1" parent="1" source="e" target="d"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r6" value="reads chain" style="dashed=1;endArrow=block;html=1;" edge="1" parent="1" source="c" target="e"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="r7" value="runs manual action" style="dashed=1;endArrow=block;html=1;" edge="1" parent="1" source="p" target="e"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="deployment" name="05 Deployment LAN">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" background="#ffffff" defaultVertexStyle="fontFamily=Helvetica;fontSize=13;" defaultEdgeStyle="fontFamily=Helvetica;fontSize=12;">
+      <root><mxCell id="0"/><mxCell id="1" parent="0"/>
+        <mxCell id="lan" value="Wi-Fi yang sama — 192.168.1.0/24" style="rounded=1;dashed=1;whiteSpace=wrap;html=1;strokeWidth=2;strokeColor=#64748b;fillColor=#f8fafc;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="40" y="50" width="1450" height="700" as="geometry"/></mxCell>
+        <mxCell id="server" value="Laptop Server&#xa;IP 192.168.1.24&#xa;&#xa;Laravel HTTP :8000&#xa;Hardhat JSON-RPC :8545&#xa;MySQL :3306&#xa;&#xa;Mode demo manual:&#xa;transaksi ditandatangani server&#xa;akun Hardhat lokal" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dcfce7;strokeColor=#16a34a;strokeWidth=2;" vertex="1" parent="1"><mxGeometry x="560" y="180" width="380" height="300" as="geometry"/></mxCell>
+        <mxCell id="hp1" value="Device 1&#xa;Andi / Buyer&#xa;Browser HTTP&#xa;192.168.1.24:8000" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dbeafe;" vertex="1" parent="1"><mxGeometry x="100" y="170" width="230" height="130" as="geometry"/></mxCell>
+        <mxCell id="hp2" value="Device 2&#xa;Budi / Seller&#xa;Browser HTTP&#xa;192.168.1.24:8000" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dbeafe;" vertex="1" parent="1"><mxGeometry x="100" y="390" width="230" height="130" as="geometry"/></mxCell>
+        <mxCell id="hp3" value="Device 3&#xa;Citra / Validator&#xa;Browser HTTP&#xa;192.168.1.24:8000" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fef3c7;" vertex="1" parent="1"><mxGeometry x="1130" y="170" width="230" height="130" as="geometry"/></mxCell>
+        <mxCell id="hp4" value="Device 4&#xa;Dinda / Auditor&#xa;Browser HTTP&#xa;192.168.1.24:8000" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ede9fe;" vertex="1" parent="1"><mxGeometry x="1130" y="390" width="230" height="130" as="geometry"/></mxCell>
+        <mxCell id="l1" value="HTTP :8000" style="endArrow=block;html=1;strokeColor=#2563eb;" edge="1" parent="1" source="hp1" target="server"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="l2" value="HTTP :8000" style="endArrow=block;html=1;strokeColor=#2563eb;" edge="1" parent="1" source="hp2" target="server"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="l3" value="HTTP :8000" style="endArrow=block;html=1;strokeColor=#2563eb;" edge="1" parent="1" source="hp3" target="server"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="l4" value="HTTP :8000" style="endArrow=block;html=1;strokeColor=#2563eb;" edge="1" parent="1" source="hp4" target="server"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="db" value="MySQL&#xa;Metadata only&#xa;users, orders, escrows, txs, disputes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ede9fe;strokeColor=#7c3aed;" vertex="1" parent="1"><mxGeometry x="460" y="570" width="270" height="100" as="geometry"/></mxCell>
+        <mxCell id="chain" value="Hardhat Blockchain&#xa;MockIDR.sol&#xa;SafePayEscrow.sol&#xa;Source of truth: status + funds" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fef3c7;strokeColor=#d97706;" vertex="1" parent="1"><mxGeometry x="820" y="570" width="300" height="100" as="geometry"/></mxCell>
+        <mxCell id="l5" value="DB connection" style="endArrow=block;html=1;" edge="1" parent="1" source="server" target="db"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="l6" value="JSON-RPC" style="endArrow=block;html=1;" edge="1" parent="1" source="server" target="chain"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="note" value="Device lain tidak menjalankan Laravel atau Hardhat. Device hanya membuka browser ke IP laptop.&#xa;Mode manual: port 8000 cukup dibuka di firewall. Port 8545 tidak perlu dibuka ke HP." style="shape=note;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="420" y="790" width="720" height="80" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
