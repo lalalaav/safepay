@@ -1,7 +1,9 @@
 {
   "chainId": 31337,
   "rpc": "http://127.0.0.1:8545",
-  "token": "0x7a2088a1bFc9d81c55368AE168C2C02570cB814F",
-  "escrow": "0x09635F643e140090A9A8Dcd712eD6285858ceBef",
-  "arbiter": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC"
+  "currency": "ETH",
+  "weiPerIdr": "1000000000000",
+  "escrow": "0x0B306BF915C4d645ff596e518fAf3F9669b97016",
+  "arbiter": "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC",
+  "faucet": "0xa0Ee7A142d267C1f36714E4a8F75612F20a79720"
 }
